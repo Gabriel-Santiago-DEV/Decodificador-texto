@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+            <img class="logo" src="imagens/logo.jpg" alt="logo">
+    </header>
+    <main>
+        <section class="campo-digite-algo">
+        <textarea id="imput-text"class="digite-algo" rows="20" cols="40" placeholder="Digite algo..."></textarea>
+        <p class="observacao"><strong>Apenas letras minúsculas e sem acento!</strong></p>
+            <div class="botoes">
+                <button class="botao-criptografar">Criptografar</button>
+                <button class="botao-descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <section class="campo-resultado">
+            <img class="imagem-lupa" src="imagens/lupa.png" alt="ícone de lupa">
+            <img class="nenhuma-mensagem" src="imagens/nenhuma-mensagem-encontrada.png" alt="nenhuma mensagem encontrada">
+            <div class="texto-resultado" style="display: none;"></div>
+            <button class="botao-copiar" style="display: none;">Copiar</button>
+            <button class="botao-limpar" style="display: none;">Limpar</button>
+        </section>
+    </main>
+    <footer class="rodape">
+        Desenvolvido por <strong><a href="https://github.com/Gabriel-Santiago-DEV" target="_blank">Gabriel Santiago Davi</a></strong> 2024
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

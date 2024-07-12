@@ -1,0 +1,135 @@
+﻿* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    background-image: url(imagens/imagem-fundo.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header { 
+    padding: 1% 2%;
+    display: flex;
+}
+.logo {
+    width: 4%;
+}
+main { 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.campo-digite-algo{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.digite-algo{ 
+    background-color: #DEF9C4;
+    width: 70%;
+    height: 21.88rem;
+    border: 1.25rem solid transparent;
+    border-radius: 0.63rem;
+    resize: none;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    justify-content: space-between;
+}
+.observacao { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1,25rem;
+    color: #ffffff;
+}
+.botoes {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 0.94rem;
+    margin-top: 1.25rem	;
+}
+.botao-criptografar, .botao-descriptografar { 
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    padding: 0.63rem 1.25rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 0.31rem;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.38rem rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.botao-criptografar:hover, .botao-descriptografar:hover,.botao-copiar:hover{ 
+    background-color: #0056b3;
+    box-shadow: 0 0.38rem 0.50rem rgba(0, 0, 0, 0.15);
+}
+.botao-criptografar:focus, .botao-descriptografar:focus,.botao-copiar:focus { 
+    outline: none;
+    box-shadow: 0 0 0 0.19rem rgba(0, 123, 255, 0.5);
+}
+.botao-criptografar:active, .botao-descriptografar:active,.botao-copiar:active{ 
+    background-color: #004085;
+    box-shadow: 0 0.13rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+.campo-resultado { 
+    width: 15%;
+    height: 21.88rem;
+    background-color: #4CAF50; 
+    border: 0.13rem solid #000; 
+    border-radius: 0.63rem; 
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 30%
+}
+.imagem-lupa { 
+    width: 80%;
+    height: auto; 
+    margin-right: 0.63rem;
+    padding-top: 1.88rem;
+    overflow: auto;
+}
+.nenhuma-mensagem{ 
+    width: 90%;
+    height: auto; 
+    overflow: auto;
+    margin-bottom: 10%;
+}
+.texto-resultado { 
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    white-space: pre-wrap;
+}
+
+.botao-copiar, .botao-limpar { 
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    padding: 0.63rem 1.25rem;
+    color: #000;
+    background-color:#DEF9C4;
+    border: none;
+    border-radius: 0.31rem;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.38rem rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.rodape { 
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    background-color: #333; 
+    width: 100%; 
+    text-align: center; 
+    font-size: 1rem;
+    padding: 0.31rem;
+    margin-top: 1rem;
+    position: fixed; 
+    bottom: 0;
+}
+.rodape a {
+    text-decoration: none;
+    color: #4CAF50;
+}
